@@ -1,0 +1,16 @@
+{
+    "name": "app/docker-nginx-stack",
+    "description": "Docker Nginx Stack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sri Hayati",
+            "email": "sri25hyt@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "vendor-dir": "."
+    },
+    "minimum-stability": "dev"
+}

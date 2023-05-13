@@ -1,0 +1,849 @@
+{
+	"info": {
+		"_postman_id": "713cb4e8-dd6f-4ff3-865c-488298ec962d",
+		"name": "test sri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "client_id",
+									"value": "my-client-id",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8096/api/oauth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "client_id",
+											"value": "my-client-id",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "password",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "password",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "admin@mail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8096/api/oauth/token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8096",
+									"path": [
+										"api",
+										"oauth",
+										"token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.21.4"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 May 2023 12:13:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, PATCH, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib2F1dGgyLXJlc291cmNlIl0sInVzZXJfbmFtZSI6ImFkbWluQG1haWwuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTY4NDAwODc5MCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9TVVBFUlVTRVIiLCJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6IjNjN2QxYWFlLTU4ZjEtNGU0MC1hYWFkLWI5ODkzODM3MTJlZCIsImNsaWVudF9pZCI6Im15LWNsaWVudC1pZCJ9.m4hb_bNv7oDVUojYtk6gHNKNtfHtQp-jNXxdGjFTubo\",\n    \"token_type\": \"bearer\",\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsib2F1dGgyLXJlc291cmNlIl0sInVzZXJfbmFtZSI6ImFkbWluQG1haWwuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImF0aSI6IjNjN2QxYWFlLTU4ZjEtNGU0MC1hYWFkLWI5ODkzODM3MTJlZCIsImV4cCI6MTY5MTIzNzU5MCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9TVVBFUlVTRVIiLCJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6ImM5Yjk1ZDFlLTg2YjQtNGE1YS04N2U5LTNmODBiYzYyZmE2ZSIsImNsaWVudF9pZCI6Im15LWNsaWVudC1pZCJ9.WSSgWYPw7ja-3PSRK63Nq8rEJx6g-UuTkStHeNaoRNM\",\n    \"expires_in\": 28799,\n    \"scope\": \"read write\",\n    \"jti\": \"3c7d1aae-58f1-4e40-aaad-b989383712ed\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get business",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8096/api/v1/business?size=20&page=1&sort=id&filters=[[\"alias\",\"like\",\"golden\"],[\"or\"],[\"name\",\"like\",\"golden\"],[\"or\"],[\"location.city\",\"like\",Angeles\"],[\"and\"],[\"rating\",\">\",\"3\"]]",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"v1",
+								"business"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "id"
+								},
+								{
+									"key": "sort",
+									"value": "-id",
+									"disabled": true
+								},
+								{
+									"key": "filters",
+									"value": "[[\"alias\",\"like\",\"golden\"],[\"or\"],[\"name\",\"like\",\"golden\"],[\"or\"],[\"location.city\",\"like\",Angeles\"],[\"and\"],[\"rating\",\">\",\"3\"]]"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get business",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8096/api/v1/business",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8096",
+									"path": [
+										"api",
+										"v1",
+										"business"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.21.4"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 May 2023 12:11:12 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, PATCH, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 2,\n            \"alias\": \"golden-boy-pizza-hamburg\",\n            \"distance\": 4992.437696561071,\n            \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n            \"is_claimed\": false,\n            \"is_closed\": true,\n            \"date_opened\": \"\",\n            \"date_closed\": \"\",\n            \"name\": \"Golden Boy Pizza\",\n            \"phone\": \"+14159829738\",\n            \"photo_count\": 50,\n            \"price\": \"$\",\n            \"rating\": 4,\n            \"review_count\": 903,\n            \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n            \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n            \"categories\": [\n                {\n                    \"id\": 1,\n                    \"alias\": \"pizza\",\n                    \"title\": \"Pizza\"\n                },\n                {\n                    \"id\": 2,\n                    \"alias\": \"food\",\n                    \"title\": \"Food\"\n                }\n            ],\n            \"coordinates\": {\n                \"id\": 1,\n                \"latitude\": 41.7873382568359,\n                \"longitude\": -123.051551818848\n            },\n            \"location\": {\n                \"id\": 1,\n                \"address1\": \"James\",\n                \"address2\": \"Street\",\n                \"address3\": \"68M\",\n                \"city\": \"Los Angeles\",\n                \"country\": \"US\",\n                \"state\": \"CA\",\n                \"zip_code\": \"22399\"\n            },\n            \"photo_details\": [\n                {\n                    \"id\": 1,\n                    \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n                    \"caption\": \"Meat\",\n                    \"width\": \"710,\",\n                    \"height\": \"47,\",\n                    \"is_user_submitted\": \"false,\",\n                    \"label\": \"food\",\n                    \"user_id\": \"null,\"\n                },\n                {\n                    \"id\": 2,\n                    \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n                    \"caption\": \"Dessert\",\n                    \"width\": \"585\",\n                    \"height\": \"78\",\n                    \"is_user_submitted\": \"false\",\n                    \"label\": \"food\",\n                    \"user_id\": \"null,\"\n                },\n                {\n                    \"id\": 3,\n                    \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n                    \"caption\": \"Dessert_2\",\n                    \"width\": \"710\",\n                    \"height\": \"53\",\n                    \"is_user_submitted\": \"false\",\n                    \"label\": \"food\"\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"alias\": \"golden Chiken\",\n            \"distance\": 4992.437696561071,\n            \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n            \"is_claimed\": false,\n            \"is_closed\": true,\n            \"date_opened\": \"\",\n            \"date_closed\": \"\",\n            \"name\": \"Golden Boy Pizza\",\n            \"phone\": \"+14159829738\",\n            \"photo_count\": 50,\n            \"price\": \"$\",\n            \"rating\": 4,\n            \"review_count\": 903,\n            \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n            \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n            \"categories\": [\n                {\n                    \"id\": 3,\n                    \"alias\": \"pizza\",\n                    \"title\": \"Pizza\"\n                },\n                {\n                    \"id\": 4,\n                    \"alias\": \"food\",\n                    \"title\": \"Food\"\n                }\n            ],\n            \"coordinates\": {\n                \"id\": 2,\n                \"latitude\": 41.7873382568359,\n                \"longitude\": -123.051551818848\n            },\n            \"location\": {\n                \"id\": 2,\n                \"address1\": \"James\",\n                \"address2\": \"Street\",\n                \"address3\": \"68M\",\n                \"city\": \"Los Angeles\",\n                \"country\": \"US\",\n                \"state\": \"CA\",\n                \"zip_code\": \"22399\"\n            },\n            \"photo_details\": [\n                {\n                    \"id\": 4,\n                    \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n                    \"caption\": \"Meat\",\n                    \"width\": \"710,\",\n                    \"height\": \"47,\",\n                    \"is_user_submitted\": \"false,\",\n                    \"label\": \"food\",\n                    \"user_id\": \"null,\"\n                },\n                {\n                    \"id\": 5,\n                    \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n                    \"caption\": \"Dessert\",\n                    \"width\": \"585\",\n                    \"height\": \"78\",\n                    \"is_user_submitted\": \"false\",\n                    \"label\": \"food\",\n                    \"user_id\": \"null,\"\n                },\n                {\n                    \"id\": 6,\n                    \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n                    \"caption\": \"Dessert_2\",\n                    \"width\": \"710\",\n                    \"height\": \"53\",\n                    \"is_user_submitted\": \"false\",\n                    \"label\": \"food\"\n                }\n            ]\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"unsorted\": true,\n            \"sorted\": false,\n            \"empty\": true\n        },\n        \"page_size\": 10,\n        \"page_number\": 0,\n        \"offset\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": true,\n    \"total_pages\": 1,\n    \"total_elements\": 2,\n    \"number_of_elements\": 2,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"unsorted\": true,\n        \"sorted\": false,\n        \"empty\": true\n    },\n    \"first\": true,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "get business by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8096/api/v1/business/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"v1",
+								"business",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get business by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8096/api/v1/business/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8096",
+									"path": [
+										"api",
+										"v1",
+										"business",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.21.4"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 May 2023 12:09:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, PATCH, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"alias\": \"golden-boy-pizza-hamburg\",\n    \"distance\": 4992.437696561071,\n    \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n    \"is_claimed\": false,\n    \"is_closed\": true,\n    \"date_opened\": \"\",\n    \"date_closed\": \"\",\n    \"name\": \"Golden Boy Pizza\",\n    \"phone\": \"+14159829738\",\n    \"photo_count\": 50,\n    \"price\": \"$\",\n    \"rating\": 4,\n    \"review_count\": 903,\n    \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n    \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"alias\": \"pizza\",\n            \"title\": \"Pizza\"\n        },\n        {\n            \"id\": 2,\n            \"alias\": \"food\",\n            \"title\": \"Food\"\n        }\n    ],\n    \"coordinates\": {\n        \"id\": 1,\n        \"latitude\": 41.7873382568359,\n        \"longitude\": -123.051551818848\n    },\n    \"location\": {\n        \"id\": 1,\n        \"address1\": \"James\",\n        \"address2\": \"Street\",\n        \"address3\": \"68M\",\n        \"city\": \"Los Angeles\",\n        \"country\": \"US\",\n        \"state\": \"CA\",\n        \"zip_code\": \"22399\"\n    },\n    \"photo_details\": [\n        {\n            \"id\": 1,\n            \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n            \"caption\": \"Meat\",\n            \"width\": \"710,\",\n            \"height\": \"47,\",\n            \"is_user_submitted\": \"false,\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 2,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n            \"caption\": \"Dessert\",\n            \"width\": \"585\",\n            \"height\": \"78\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 3,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n            \"caption\": \"Dessert_2\",\n            \"width\": \"710\",\n            \"height\": \"53\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "delete business",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8096/api/v1/business/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"v1",
+								"business",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete business",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8096/api/v1/business/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8096",
+									"path": [
+										"api",
+										"v1",
+										"business",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.21.4"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 May 2023 12:16:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, PATCH, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\"success\":true}"
+						}
+					]
+				},
+				{
+					"name": "post business",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"ternak lele\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8096/api/v1/business",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"v1",
+								"business"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "post business",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"alias\": \"golden-boy-pizza-hamburg\",\n  \"categories\": [\n    {\n      \"alias\": \"pizza\",\n      \"title\": \"Pizza\"\n    },\n    {\n      \"alias\": \"food\",\n      \"title\": \"Food\"\n    }\n  ],\n  \"coordinates\": {\n    \"latitude\": 41.7873382568359,\n    \"longitude\": -123.051551818848\n  },\n  \"display_phone\": \"(415) 982-9738\",\n  \"distance\": 4992.437696561071,\n  \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n  \"is_claimed\": false,\n  \"is_closed\": true,\n  \"date_opened\": \"\",\n  \"date_closed\": \"\",\n  \"location\": {\n    \"address1\": \"James\",\n    \"address2\": \"Street\",\n    \"address3\": \"68M\",\n    \"city\": \"Los Angeles\",\n    \"country\": \"US\",\n    \"display_address\": [\n      \"James\",\n      \"Street\",\n      \"68M\",\n      \"Los Angeles, CA 22399\"\n    ],\n    \"state\": \"CA\",\n    \"zip_code\": \"22399\"\n  },\n  \"name\": \"Golden Boy Pizza\",\n  \"phone\": \"+14159829738\",\n  \"photos\": [\n    \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n    \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n    \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\"\n  ],\n  \"photo_details\": [\n    {\n      \"photo_id\": \"CPc91bGzKBe95aM5edjhhQ\",\n      \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n      \"caption\": \"Meat\",\n      \"width\": \"710,\",\n      \"height\": \"47,\",\n      \"is_user_submitted\": \"false,\",\n      \"user_id\": \"null,\",\n      \"label\": \"food\"\n    },\n    {\n      \"photo_id\": \"FmXn6cYO1Mm03UNO5cbOqw\",\n      \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n      \"caption\": \"Dessert\",\n      \"width\": 585,\n      \"height\": 78,\n      \"is_user_submitted\": false,\n      \"user_id\": \"null,\",\n      \"label\": \"food\"\n    },\n    {\n      \"photo_id\": \"HZVDyYaghwPl2kVbvHuHjA\",\n      \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n      \"caption\": \"Dessert_2\",\n      \"width\": 710,\n      \"height\": 53,\n      \"is_user_submitted\": false,\n      \"user_id\": null,\n      \"label\": \"food\"\n    }\n  ],\n  \"photo_count\": 50,\n  \"price\": \"$\",\n  \"rating\": 4,\n  \"review_count\": 903,\n  \"hours\": {\n    \"open\": [\n      {\n        \"is_overnight\": false,\n        \"start\": 15,\n        \"end\": 130,\n        \"day\": 0\n      },\n      {\n        \"is_overnight\": false,\n        \"start\": 630,\n        \"end\": 1730,\n        \"day\": 1\n      },\n      {\n        \"is_overnight\": false,\n        \"start\": 45,\n        \"end\": 500,\n        \"day\": 2\n      }\n    ],\n    \"hours_type\": \"REGULAR\",\n    \"is_open_now\": false\n  },\n  \"special_hours\": [\n    {\n      \"date\": \"2019-02-07\",\n      \"end\": \"2000\",\n      \"is_closed\": null,\n      \"is_overnight\": false,\n      \"start\": \"1600\"\n    }\n  ],\n  \"transactions\": [\n    \"restaurant_reservation\"\n  ],\n  \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n  \"attributes\": {\n    \"business_temp_closed\": 1657868400,\n    \"outdoor_seating\": false,\n    \"liked_by_vegans\": false,\n    \"liked_by_vegetarians\": true,\n    \"hot_and_new\": \"2022-12-10\"\n  },\n  \"messaging\": {\n    \"url\": \"https://www.yelp.com/raq/AA5cAADa-F9f5DPqZ-PADA?adjust_creative=5374ujususZtKiSNEg7uhg&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=5374upadasZtCvMLBg7uhg#popup%3Araq\",\n    \"use_case_text\": \"Request a Quote\",\n    \"response_rate\": 1,\n    \"response_time\": 791\n  },\n  \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8096/api/v1/business",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8096",
+									"path": [
+										"api",
+										"v1",
+										"business"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.21.4"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 May 2023 11:35:11 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, PATCH, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"alias\": \"golden-boy-pizza-hamburg\",\n    \"distance\": 4992.437696561071,\n    \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n    \"is_claimed\": false,\n    \"is_closed\": true,\n    \"date_opened\": \"\",\n    \"date_closed\": \"\",\n    \"name\": \"Golden Boy Pizza\",\n    \"phone\": \"+14159829738\",\n    \"photo_count\": 50,\n    \"price\": \"$\",\n    \"rating\": 4,\n    \"review_count\": 903,\n    \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n    \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"alias\": \"pizza\",\n            \"title\": \"Pizza\"\n        },\n        {\n            \"id\": 2,\n            \"alias\": \"food\",\n            \"title\": \"Food\"\n        }\n    ],\n    \"coordinates\": {\n        \"id\": 1,\n        \"latitude\": 41.7873382568359,\n        \"longitude\": -123.051551818848\n    },\n    \"location\": {\n        \"id\": 1,\n        \"address1\": \"James\",\n        \"address2\": \"Street\",\n        \"address3\": \"68M\",\n        \"city\": \"Los Angeles\",\n        \"country\": \"US\",\n        \"state\": \"CA\",\n        \"zip_code\": \"22399\"\n    },\n    \"photo_details\": [\n        {\n            \"id\": 1,\n            \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n            \"caption\": \"Meat\",\n            \"width\": \"710,\",\n            \"height\": \"47,\",\n            \"is_user_submitted\": \"false,\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 2,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n            \"caption\": \"Dessert\",\n            \"width\": \"585\",\n            \"height\": \"78\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 3,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n            \"caption\": \"Dessert_2\",\n            \"width\": \"710\",\n            \"height\": \"53\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "put business",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"alias\": \"golden-boy-pizza-hamburg\",\n    \"distance\": 4992.437696561071,\n    \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n    \"is_claimed\": false,\n    \"is_closed\": true,\n    \"date_opened\": \"\",\n    \"date_closed\": \"\",\n    \"name\": \"Golden Boy Pizza\",\n    \"phone\": \"+14159829738\",\n    \"photo_count\": 50,\n    \"price\": \"$\",\n    \"rating\": 4,\n    \"review_count\": 903,\n    \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n    \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"alias\": \"pizza\",\n            \"title\": \"Pizza\"\n        },\n        {\n            \"id\": 2,\n            \"alias\": \"food\",\n            \"title\": \"Food\"\n        }\n    ],\n    \"coordinates\": {\n        \"id\": 1,\n        \"latitude\": 41.7873382568359,\n        \"longitude\": -123.051551818848\n    },\n    \"location\": {\n        \"id\": 1,\n        \"address1\": \"James\",\n        \"address2\": \"Street\",\n        \"address3\": \"68M\",\n        \"city\": \"Los Angeles\",\n        \"country\": \"US\",\n        \"state\": \"CA\",\n        \"zip_code\": \"22399\"\n    },\n    \"photo_details\": [\n        {\n            \"id\": 1,\n            \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n            \"caption\": \"Meat\",\n            \"width\": \"710,\",\n            \"height\": \"47,\",\n            \"is_user_submitted\": \"false,\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 2,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n            \"caption\": \"Dessert\",\n            \"width\": \"585\",\n            \"height\": \"78\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 3,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n            \"caption\": \"Dessert_2\",\n            \"width\": \"710\",\n            \"height\": \"53\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8096/api/v1/business/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8096",
+							"path": [
+								"api",
+								"v1",
+								"business",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "put business",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 2,\n    \"alias\": \"golden-boy-pizza-hamburg\",\n    \"distance\": 4992.437696561071,\n    \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n    \"is_claimed\": false,\n    \"is_closed\": true,\n    \"date_opened\": \"\",\n    \"date_closed\": \"\",\n    \"name\": \"Golden Boy Pizza\",\n    \"phone\": \"+14159829738\",\n    \"photo_count\": 50,\n    \"price\": \"$\",\n    \"rating\": 4,\n    \"review_count\": 903,\n    \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n    \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"alias\": \"pizza\",\n            \"title\": \"Pizza\"\n        },\n        {\n            \"id\": 2,\n            \"alias\": \"food\",\n            \"title\": \"Food\"\n        }\n    ],\n    \"coordinates\": {\n        \"id\": 1,\n        \"latitude\": 41.7873382568359,\n        \"longitude\": -123.051551818848\n    },\n    \"location\": {\n        \"id\": 1,\n        \"address1\": \"James\",\n        \"address2\": \"Street\",\n        \"address3\": \"68M\",\n        \"city\": \"Los Angeles\",\n        \"country\": \"US\",\n        \"state\": \"CA\",\n        \"zip_code\": \"22399\"\n    },\n    \"photo_details\": [\n        {\n            \"id\": 1,\n            \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n            \"caption\": \"Meat\",\n            \"width\": \"710,\",\n            \"height\": \"47,\",\n            \"is_user_submitted\": \"false,\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 2,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n            \"caption\": \"Dessert\",\n            \"width\": \"585\",\n            \"height\": \"78\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 3,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n            \"caption\": \"Dessert_2\",\n            \"width\": \"710\",\n            \"height\": \"53\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8096/api/v1/business/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8096",
+									"path": [
+										"api",
+										"v1",
+										"business",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.21.4"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 13 May 2023 12:14:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, PUT, PATCH, OPTIONS, DELETE"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "3600"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"alias\": \"golden-boy-pizza-hamburg\",\n    \"distance\": 4992.437696561071,\n    \"image_url\": \"https://yelp-photos.yelpcorp.com/bphoto/b0mx7p6x9Z1ivb8yzaU3dg/o.jpg\",\n    \"is_claimed\": false,\n    \"is_closed\": true,\n    \"date_opened\": \"\",\n    \"date_closed\": \"\",\n    \"name\": \"Golden Boy Pizza\",\n    \"phone\": \"+14159829738\",\n    \"photo_count\": 50,\n    \"price\": \"$\",\n    \"rating\": 4,\n    \"review_count\": 903,\n    \"url\": \"https://www.yelp.com/biz/golden-boy-pizza-hamburg?adjust_creative=XsIsNkqpLmHqfJ51zfRn3A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XsIsNkqpLmHqfJ51zfRn3A\",\n    \"yelp_menu_url\": \"https://www.yelp.com/menu/golden-boy-pizza-hamburg\",\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"alias\": \"pizza\",\n            \"title\": \"Pizza\"\n        },\n        {\n            \"id\": 2,\n            \"alias\": \"food\",\n            \"title\": \"Food\"\n        }\n    ],\n    \"coordinates\": {\n        \"id\": 1,\n        \"latitude\": 41.7873382568359,\n        \"longitude\": -123.051551818848\n    },\n    \"location\": {\n        \"id\": 1,\n        \"address1\": \"James\",\n        \"address2\": \"Street\",\n        \"address3\": \"68M\",\n        \"city\": \"Los Angeles\",\n        \"country\": \"US\",\n        \"state\": \"CA\",\n        \"zip_code\": \"22399\"\n    },\n    \"photo_details\": [\n        {\n            \"id\": 1,\n            \"url\": \"https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg\",\n            \"caption\": \"Meat\",\n            \"width\": \"710,\",\n            \"height\": \"47,\",\n            \"is_user_submitted\": \"false,\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 2,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/FmXn6cYO1Mm03UNO5cbOqw/o.jpg\",\n            \"caption\": \"Dessert\",\n            \"width\": \"585\",\n            \"height\": \"78\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\",\n            \"user_id\": \"null,\"\n        },\n        {\n            \"id\": 3,\n            \"url\": \"https://s3-media4.fl.yelpcdn.com/bphoto/HZVDyYaghwPl2kVbvHuHjA/o.jpg\",\n            \"caption\": \"Dessert_2\",\n            \"width\": \"710\",\n            \"height\": \"53\",\n            \"is_user_submitted\": \"false\",\n            \"label\": \"food\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
